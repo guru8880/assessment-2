@@ -1,0 +1,101 @@
+# PubMed Paper Fetcher - Documentation
+
+## **Project Overview**
+PubMed Paper Fetcher is a command-line tool that retrieves research papers from **PubMed** based on a user-specified query. The tool filters papers to include those with at least one author affiliated with a **pharmaceutical** or **biotech** company and outputs the results in a CSV file.
+
+---
+
+## **🚀 Features**
+- Fetches research papers from **PubMed API**.
+- Filters results to include authors with **non-academic affiliations**.
+- Saves the extracted data into a **CSV file**.
+- Provides a **command-line interface** (CLI) with flexible options.
+- Supports **debug mode** to display API responses and extracted data.
+
+---
+
+## **📦 Installation**
+
+### **1️⃣ Prerequisites**
+Ensure you have the following installed:
+- **Python 3.8+** ([Download](https://www.python.org/downloads/))
+- **Poetry** for dependency management ([Installation Guide](https://python-poetry.org/docs/#installation))
+- **Git** for version control ([Download](https://git-scm.com/downloads))
+
+### **2️⃣ Clone the Repository**
+Run the following command in your terminal:
+
+```sh
+git clone <your-repo-url>
+cd pubmed-paper-fetcher
+```
+
+### **3️⃣ Install Dependencies**
+
+```sh
+poetry install --no-root
+```
+
+---
+
+## **🔧 Usage**
+
+### **Basic Command**
+Run the script with a search query:
+
+```sh
+poetry run python src/get_papers.py "cancer research" --file results.csv
+```
+
+### **Enable Debug Mode**
+For additional output and debugging:
+
+```sh
+poetry run python src/get_papers.py "cancer research" --debug
+```
+
+### **Example Output in CSV Format**
+| PubmedID | Title | Publication Date | Non-academic Author(s) | Corresponding Author Email |
+|----------|-------|------------------|-------------------------|------------------------|----------------------------|
+| 12345678 | AI in Pharma | 2024-02-15 | Gururaj Hooli  | gururajhooli8880@gmail.com |
+
+---
+
+## **🛠 Dependencies**
+- `requests` (for making API calls)
+- `csv` (for handling CSV exports)
+- `argparse` (for command-line arguments)
+
+All dependencies are installed automatically with:
+
+```sh
+poetry install --no-root
+```
+
+---
+
+## **🔗 GitHub Integration**
+### **1️⃣ Initialize Git & Push Code**
+
+```sh
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin <your-repo-url>
+git push -u origin main
+```
+
+### **2️⃣ Verify Push on GitHub**
+Go to your **GitHub repository** and confirm the files are uploaded.
+
+---
+
+## **📜 License**
+This project is licensed under the **MIT License**.
+
+---
+
+## **📬 Contact**
+For any queries or contributions, feel free to reach out via Gmail : gururajhooli8880@gmail.com | Mobile number : 8748087601.
+
